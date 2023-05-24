@@ -30,11 +30,12 @@ public class buildBST{
         inordertravels(root.right);
     }
     public static void main(String[] args) {
-        int nodes[] = {5,1,3,4,2,1};
+        int nodes[] = {5,1,3,4,2,6};
         Node root = null;
-        for(int i =0;i<nodes.length -1;i++){
+        for(int i =0;i<nodes.length;i++){
             root = BUildBST(root,nodes[i]);
         }
-        inordertravels(root);
+        //inordertravels(root);
+        System.out.println(root.right.data);
     }
 }
